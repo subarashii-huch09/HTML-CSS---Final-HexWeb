@@ -1,0 +1,77 @@
+
+// header
+.mediaLink {
+  background-color: $media-link-color;
+  display: flex;
+  justify-content: flex-end;
+
+  & li {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+
+    & a {
+      margin-left: 4px;
+      color:$black;
+      &:hover {
+        color: purple;
+      }
+    }
+  }
+}
+
+.logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png) ;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+  display: block;
+  height: 50px;
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & ul {
+    display: flex;
+    & li {
+      margin-left: 20px;
+      font-size: $fz-primary;
+      padding: 10px 0;
+    }
+  }
+  & a {
+    color: $hex-green;
+  }
+}
+
+.navOptions {
+  & li:hover {
+    border-bottom: 2px solid $hex-green;
+  }
+}
+
+
+
+// footer
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .logo{
+    width: 170px;
+    height: 36px;
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+  }
+  & .footerContact {
+    margin-left: 4px;
+    & a {
+      display: inline;
+      color:red;
+  }
+}
+}
