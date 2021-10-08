@@ -8,8 +8,13 @@
   & li {
     display: flex;
     align-items: center;
-    margin-left: 7px;
-
+    
+    &:first-child:after {
+      content: "|";
+      color: gray;
+      padding: 3px 0;
+      margin: 5px;
+    }
     & a {
       margin-left: 4px;
       color:$black;

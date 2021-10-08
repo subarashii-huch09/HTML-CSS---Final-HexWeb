@@ -14,18 +14,18 @@
     font-size: $fz-secondary;
     position: relative;
     z-index: 2;
-
-    & .bg-black {
-    width: 100%;
-    height: 100%;
-    opacity:0.5;
-    background-color:$black;
+ }
+.bg-black {
+    width: 23.9%;
+    height: 150px;
+    background-color:rgba(0, 0, 0, 0.222);
+    z-index: 1;
     position: absolute;
-    top: 0;
-    left:0;
-    z-index: -1;
+    top: 15;
+    bottom: 9;
+    overflow:hidden;
     }
-  }
+ 
 
 
   .cardBox {
@@ -36,7 +36,7 @@
     }
   }
 
-  .cardBox_List-item {
+  .cardBox_list_item {
         text-align: center;
         width: 30%;
         padding: 15px;
@@ -64,9 +64,18 @@
           text-align: left;
         }
 
-        & ul {
-          list-style: disc;
+        & .list {
+          list-style-type:disc;
+          margin-left: 30px;
+          padding-left: 10px;
         }
+
+        & li {
+          text-indent:-20px;
+        }
+
+
+
       }
 
 
@@ -78,7 +87,7 @@
   margin-bottom: 20px;
   
 }
-.ComparisonTable {
+.comparisonTable {
   max-width: 1100px;
   margin: 0 auto 60px auto;
   & th {
@@ -90,6 +99,10 @@
       padding-left: 30px;
     }
   }
+}
+
+table {
+  margin: 0 auto;
 }
 
 .InfoSection {
