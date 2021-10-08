@@ -1,5 +1,14 @@
-console.log('Hello!');
+$(document).ready((e) => {
+  // drop-down menu 下拉式選單功能
+  $(".trigger").click(function (e) {
+    e.preventDefault();
+    $(".trigger").toggleClass("active");
+    $(".dropDown").slideToggle(500);
+  });
 
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
+  // scroll to top 效果
+  $(".top").click(function (e) {
+    e.preventDefault();
+    $("html,body").animate({ scrollTop: 0 }, 1000);
+  });
 });

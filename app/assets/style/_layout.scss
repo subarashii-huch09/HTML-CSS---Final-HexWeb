@@ -1,5 +1,19 @@
 
 // header
+.top {
+  bottom:25%; 
+  right: 35%;
+  z-index: 99; 
+  cursor: pointer;
+  position:fixed;
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  &:hover {
+    color:$hex-green;
+  }
+}
+
 .mediaLink {
   background-color: $media-link-color;
   display: flex;
@@ -54,13 +68,28 @@
 }
 
 .navOptions {
-  & li:hover {
+  position:relative;
+  & li:hover{
     border-bottom: 2px solid $hex-green;
   }
 }
 
+.navOptions a:hover, .navOptions a.active {
+  color:orange;
+}
 
+.dropDown {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  position:absolute;
+  background: rgba(255,255, 255, 0.8);
+}
 
+.navOptions ul {
+  display: none;
+}
 // footer
 footer {
   padding: 10px;
@@ -80,3 +109,4 @@ footer {
   }
 }
 }
+
