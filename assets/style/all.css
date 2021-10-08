@@ -76,6 +76,18 @@ header, .main, footer {
   max-width: 1200px;
   margin: 0 auto; }
 
+.top {
+  bottom: 20px;
+  right: 25px;
+  z-index: 99;
+  cursor: pointer;
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%; }
+  .top:hover {
+    color: #06cd9b; }
+
 .mediaLink {
   background-color: #f4f4f4;
   display: -webkit-box;
@@ -133,8 +145,31 @@ header, .main, footer {
   .navbar a {
     color: #06cd9b; }
 
-.navOptions li:hover {
-  border-bottom: 2px solid #06cd9b; }
+.navOptions {
+  position: relative; }
+  .navOptions li:hover {
+    border-bottom: 2px solid #06cd9b; }
+
+.navOptions a:hover, .navOptions a.active {
+  color: orange; }
+
+.dropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8); }
+
+.navOptions ul {
+  display: none; }
 
 footer {
   padding: 10px;
